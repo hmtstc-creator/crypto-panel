@@ -1,63 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <div class="header">
-    <div>CRYPTO MATRIX</div>
+    <div>CRYPTO PANEL</div>
     <div class="menu">
         <a href="index.html">Dashboard</a>
         <a href="trade.html">Trade</a>
+        <a href="#">Settings</a>
     </div>
 </div>
 
 <div class="grid">
 
+    <!-- MARKET -->
     <div class="panel">
         <div class="panel-title">MARKETS</div>
         BTC/USDT<br>
         ETH/USDT<br>
-        SOL/USDT
+        SOL/USDT<br>
     </div>
 
+    <!-- CHART -->
     <div class="panel">
         <div class="panel-title">CHART</div>
+
         <iframe 
-        src="https://s.tradingview.com/widgetembed/?symbol=BINANCE:BTCUSDT"
+        src="https://s.tradingview.com/widgetembed/?symbol=BINANCE:BTCUSDT&theme=dark"
         style="width:100%; height:90%; border:none;">
         </iframe>
+
     </div>
 
+    <!-- ORDER BOOK -->
     <div class="panel">
         <div class="panel-title">ORDER BOOK</div>
         Sell<br>68000<br>67900<br><br>
         Buy<br>67800<br>67700
     </div>
 
+    <!-- NEWS -->
+    <div class="panel">
+        <div class="panel-title">NEWS</div>
+        BTC rising...<br>
+        ETH upgrade...<br>
+    </div>
+
+    <!-- BOT PANEL -->
     <div class="panel">
         <div class="panel-title">BOTS</div>
-        RSI: ON
+
+        <div class="bot">RSI <button>ON</button></div>
+        <div class="bot">MACD <button>OFF</button></div>
+
     </div>
 
+    <!-- TRADE PANEL -->
     <div class="panel">
         <div class="panel-title">TRADE</div>
-        <input id="symbol" placeholder="BTCUSDT"><br><br>
-        <input id="amount" placeholder="Amount"><br><br>
 
-        <button class="buy" onclick="buy()">BUY</button>
-        <button class="sell" onclick="sell()">SELL</button>
+        <input placeholder="Symbol">
+        <input placeholder="Amount">
+
+        <input placeholder="Limit Price">
+        <input placeholder="Take Profit % (0.6)">
+
+        <button class="buy">BUY</button>
+        <button class="sell">SELL</button>
+
     </div>
 
+    <!-- EDIT ORDER -->
     <div class="panel">
-        <div class="panel-title">LOGS</div>
-        <div id="logs"></div>
+        <div class="panel-title">EDIT ORDER</div>
+        <input placeholder="New Price">
+        <button>Update</button>
+    </div>
+
+    <!-- POSITIONS -->
+    <div class="panel">
+        <div class="panel-title">POSITIONS</div>
+
+        <div class="table">
+        BTC | 0.01 | 68000 | +2%<br>
+        ETH | 0.5 | 3000 | -1%
+        </div>
+
     </div>
 
 </div>
-
-<script src="js/app.js"></script>
 
 </body>
 </html>

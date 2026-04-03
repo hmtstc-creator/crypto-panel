@@ -1,41 +1,81 @@
 body {
     margin: 0;
-    background: #050505;
-    color: #00ff9f;
-    font-family: Consolas;
+    background: #0f1115;
+    color: #e4e6eb;
+    font-family: Arial;
 }
 
+/* HEADER */
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
-    border-bottom: 1px solid #00ff9f;
+    padding: 12px;
+    background: #1a1d24;
+    border-bottom: 1px solid #2a2e39;
 }
 
 .menu a {
-    margin-left: 20px;
-    color: #00ff9f;
+    margin-left: 15px;
+    color: #ccc;
     text-decoration: none;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 20% 50% 30%;
-    grid-template-rows: 60vh 40vh;
-    gap: 10px;
-    padding: 10px;
+.menu a:hover {
+    color: white;
 }
 
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 18% 52% 20% 10%;
+    grid-template-rows: 60vh 40vh;
+    gap: 8px;
+    padding: 8px;
+}
+
+/* PANEL */
 .panel {
-    border: 1px solid #00ff9f;
+    background: #1a1d24;
+    border: 1px solid #2a2e39;
     padding: 10px;
-    background: #0a0a0a;
+    border-radius: 6px;
 }
 
 .panel-title {
-    border-bottom: 1px solid #00ff9f;
-    margin-bottom: 10px;
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #aaa;
 }
 
-.buy { background: #003300; }
-.sell { background: #330000; }
+/* BUTTON */
+button {
+    padding: 8px;
+    margin: 5px 2px;
+    border: none;
+    cursor: pointer;
+}
+
+.buy { background: #2ecc71; color: black; }
+.sell { background: #e74c3c; color: white; }
+
+/* INPUT */
+input {
+    width: 90%;
+    padding: 6px;
+    margin-bottom: 8px;
+    background: #0f1115;
+    border: 1px solid #333;
+    color: white;
+}
+
+/* BOT */
+.bot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+/* TABLE */
+.table {
+    font-size: 12px;
+}
