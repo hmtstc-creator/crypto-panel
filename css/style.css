@@ -1,1 +1,41 @@
+body {
+    margin: 0;
+    background: #050505;
+    color: #00ff9f;
+    font-family: Consolas;
+}
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #00ff9f;
+}
+
+.menu a {
+    margin-left: 20px;
+    color: #00ff9f;
+    text-decoration: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    grid-template-rows: 60vh 40vh;
+    gap: 10px;
+    padding: 10px;
+}
+
+.panel {
+    border: 1px solid #00ff9f;
+    padding: 10px;
+    background: #0a0a0a;
+}
+
+.panel-title {
+    border-bottom: 1px solid #00ff9f;
+    margin-bottom: 10px;
+}
+
+.buy { background: #003300; }
+.sell { background: #330000; }
